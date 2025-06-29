@@ -4,7 +4,7 @@
 
 ## Descripción
 
-HospifyX es una solución integral para la gestión hospitalaria, diseñada para optimizar procesos médicos, administrativos y de atención al paciente internado. El sistema permite gestionar historiales clínicos electrónicos y la asignación y control de camas para internación.
+HospifyX es una solución integral para la gestión hospitalaria desarrollada específicamente para el **Hospital Enfermeros Argentinos**. El sistema está diseñado para optimizar procesos médicos, administrativos y de atención al paciente internado, permitiendo gestionar historiales clínicos electrónicos y la asignación y control de camas para internación.
 
 > 🚧 **La aplicación sigue en desarrollo y se continúan agregando nuevas funcionalidades y mejoras.**
 
