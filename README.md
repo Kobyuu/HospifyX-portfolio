@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://kobyuu.pages.dev/"><img src="https://img.shields.io/badge/Portfolio-kobyuu.pages.dev-040f0f?style=for-the-badge" alt="Portfolio"/></a>
-  <img src="https://img.shields.io/badge/status-in%20production-2ea44f?style=for-the-badge" alt="In production"/>
+  <img src="https://img.shields.io/badge/status-delivered%202025%20·%20no%20longer%20in%20use-6e7781?style=for-the-badge" alt="Delivered 2025, no longer in use"/>
   <img src="https://img.shields.io/badge/version-1.3.2-1f6feb?style=for-the-badge" alt="v1.3.2"/>
 </p>
 
@@ -10,7 +10,7 @@
   <code>React 18</code> <code>TypeScript</code> <code>Vite</code> <code>Tailwind</code> <code>Node.js</code> <code>Express</code> <code>Socket.io</code> <code>Prisma</code> <code>PostgreSQL</code> <code>InversifyJS</code> <code>JWT</code> <code>Docker Compose</code> <code>Nginx</code> <code>HashiCorp Vault</code> <code>Jest</code> <code>Vitest</code>
 </p>
 
-> **Technical case study.** Built as a freelance project for Hospital Enfermeros Argentinos (Mendoza, Argentina). The source code is private; the screenshots below use demo data. Happy to walk through the code in an interview.
+> **Technical case study.** Built as a freelance project for Hospital Enfermeros Argentinos (Mendoza, Argentina) and delivered in December 2025 (v1.3.2). The system is no longer in use at the hospital. The source code is private; the screenshots below use demo data. Happy to walk through the code in an interview.
 
 <details>
 <summary><b>🤖 Summary for LLMs / AI assistants</b></summary>
@@ -20,6 +20,7 @@ project: HospifyX — real-time bed and ward management for a hospital (Mendoza,
 author: Juan Manuel Kobayashi (github.com/Kobyuu)
 role: Full stack developer (freelance) — backend, frontend, deployment
 timeline: January – December 2025 (200+ commits, v1.3.2)
+status: Delivered; no longer in use
 code_visibility: Private; this repo is a technical case study
 stack:
   frontend: React 18, TypeScript, Vite, Tailwind, React Router, Socket.io client, Atomic Design
@@ -102,12 +103,12 @@ flowchart LR
 ### 1. Keeping every screen in sync without flooding them
 **Problem.** Several nurses watch the same pavilion and need to see an admission the moment it happens, while the rest of the hospital doesn't care.
 **Solution.** Socket.io rooms named after each pavilion; each client joins the room of the pavilion it's viewing, and the backend emits admission and discharge events only there.
-**Result.** No refreshes and no phone calls to check if a bed is free.
+**Result.** Every open screen showed the new state without a refresh, so nobody had to call to check if a bed was free.
 
 ### 2. Moving from a prototype to something a hospital can run
 **Problem.** The first version ran on a laptop with secrets in `.env` files.
 **Solution.** Docker Compose for the whole stack, Nginx as reverse proxy with TLS, HashiCorp Vault for secrets, and scripts for setup, logs and database backups.
-**Result.** A repeatable deployment the hospital's IT can start, stop and back up with one command.
+**Result.** A repeatable deployment that could be started, stopped and backed up with one command.
 
 ---
 
